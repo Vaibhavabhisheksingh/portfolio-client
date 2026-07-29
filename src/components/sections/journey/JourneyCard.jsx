@@ -123,7 +123,7 @@ const JourneyCard = ({ item, index }) => {
           {organization}
         </p>
          <p className="font-semibold text-sm text-blue-400">
-              {item.grade}
+            Grade : {item.grade}
             </p>
 
         {item.location && (
