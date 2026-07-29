@@ -8,45 +8,6 @@
 
 //         font-bold
 
-//         text-white
-
-//         mb-6
-//       "
-//       >
-//         MERN Stack Developer
-//       </h3>
-
-//       <p
-//         className="
-//         text-zinc-400
-
-//         leading-8
-
-//         mb-4
-//       "
-//       >
-//         I'm Vaibhav Singh, a passionate MERN Stack Developer
-//         who enjoys building modern, scalable, and responsive web
-//         applications with clean architecture and intuitive user experiences.
-//       </p>
-
-//       <p
-//         className="
-//         text-zinc-400
-
-//         leading-8
-//       "
-//       >
-//         I continuously improve my skills through Data Structures &
-//         Algorithms, full-stack development, and real-world projects while
-//         focusing on writing clean and maintainable code.
-//       </p>
-
-//     </div>
-//   );
-// };
-
-// export default AboutContent;
 
 import { useEffect, useState } from "react";
 import settingService from "../../../services/settingService";
