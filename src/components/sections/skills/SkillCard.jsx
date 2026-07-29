@@ -14,6 +14,8 @@ import {
   SiDocker,
   SiHtml5,
   SiCss,
+  SiMySQL,
+  SiJava,
 } from "react-icons/si";
 import { memo } from "react";
 
@@ -32,6 +34,8 @@ const icons = {
   docker: SiDocker,
   html: SiHtml5,
   css: SiCss,
+  mysql: SiMySQL,
+  java: SiJava,
 };
 
 const SkillCard = ({ skill, index }) => {
