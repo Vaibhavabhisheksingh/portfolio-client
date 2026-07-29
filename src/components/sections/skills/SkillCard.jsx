@@ -5,7 +5,7 @@ import {
   FaJava,
   FaDocker,
   FaAws,
-} from
+} from "react-icons/fa";
 import {
   SiReact,
   SiJavascript,
