@@ -8,7 +8,7 @@ import socialService from "../../../services/socialService";
 import ErrorState from "../../common/ErrorState";
 
 const ContactInfo = () => {
-  const [settings, setSettings] = useState(null);
+  const [settings, setSettings] = useState([]);
   const [socials, setSocials] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
