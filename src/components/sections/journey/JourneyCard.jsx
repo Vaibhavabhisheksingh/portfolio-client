@@ -25,6 +25,10 @@ const JourneyCard = ({ item, index }) => {
     ? [item.fieldOfStudy]
     : item.technologies || [];
 
+  const grade = isEducation
+    ? [item.grade]
+    : "" || [];
+
   const start = new Date(item.startDate).getFullYear();
 
   const end = isEducation
@@ -118,6 +122,9 @@ const JourneyCard = ({ item, index }) => {
         <p className="mt-3 text-zinc-500">
           {organization}
         </p>
+         <p className="font-semibold text-sm text-blue-400">
+              {item.grade}
+            </p>
 
         {item.location && (
           <p className="text-sm text-zinc-500">
