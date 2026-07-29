@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import {
   FaPython,
   FaJava,
-  FaDocker,
   FaAws,
 } from "react-icons/fa";
 import {
@@ -45,7 +44,6 @@ const icons = {
   java: FaJava,
   python: FaPython,
   aws: FaAws,
-  docker: FaDocker,
 };
 
 const SkillCard = ({ skill, index }) => {
