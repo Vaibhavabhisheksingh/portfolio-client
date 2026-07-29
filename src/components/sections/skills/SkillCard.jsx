@@ -4,7 +4,6 @@ import {
   FaPython,
   FaJava,
   FaAws,
-  FaMySQL
 } from "react-icons/fa";
 import {
   SiReact,
@@ -21,7 +20,7 @@ import {
   SiDocker,
   SiHtml5,
   SiCss,
- 
+  SiMysql
 } from "react-icons/si";
 import { memo } from "react";
 
@@ -40,7 +39,7 @@ const icons = {
   docker: SiDocker,
   html: SiHtml5,
   css: SiCss,
-  mysql: FaMySQL,
+  mysql: SiMysql,
   java: FaJava,
   python: FaPython,
   aws: FaAws,
