@@ -1,14 +1,3 @@
-// const AboutContent = () => {
-//   return (
-//     <div>
-
-//       <h3
-//         className="
-//         text-3xl
-
-//         font-bold
-
-
 import { useEffect, useState } from "react";
 import settingService from "../../../services/settingService";
 
