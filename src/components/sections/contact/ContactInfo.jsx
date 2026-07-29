@@ -26,7 +26,7 @@ const ContactInfo = () => {
         socialService.getSocials(),
       ]);
 
-      setSettings(settingsRes.settings);
+      setSettings(settingsRes);
       setSocials(socialRes.socials || []);
     } catch (err) {
       console.error(err);
