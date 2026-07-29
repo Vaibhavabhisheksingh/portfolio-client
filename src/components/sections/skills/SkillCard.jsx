@@ -1,4 +1,11 @@
 import { motion } from "framer-motion";
+
+import {
+  FaPython,
+  FaJava,
+  FaDocker,
+  FaAws,
+} from
 import {
   SiReact,
   SiJavascript,
@@ -15,7 +22,7 @@ import {
   SiHtml5,
   SiCss,
   SiMySQL,
-  SiJava,
+ 
 } from "react-icons/si";
 import { memo } from "react";
 
@@ -35,7 +42,10 @@ const icons = {
   html: SiHtml5,
   css: SiCss,
   mysql: SiMySQL,
-  java: SiJava,
+  java: FaJava,
+  python: FaPython,
+  aws: FaAws,
+  docker: FaDocker,
 };
 
 const SkillCard = ({ skill, index }) => {
