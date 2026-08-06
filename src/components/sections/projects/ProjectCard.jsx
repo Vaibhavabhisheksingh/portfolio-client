@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-import { memo } from "react";
+import { memo, useState } from "react";
 
 const ProjectCard = ({ project }) => {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <motion.div
       whileHover={{ y: -8 }}
@@ -46,7 +48,24 @@ const ProjectCard = ({ project }) => {
 
         <h3 className="mt-5 text-3xl font-bold text-white">{project.title}</h3>
 
-        <p className="mt-4 leading-7 text-zinc-400">{project.description}</p>
+        <div className="mt-4">
+          <p
+            className={`leading-7 text-zinc-400 transition-all duration-300 ${
+              expanded ? "" : "line-clamp-2"
+            }`}
+          >
+            {project.description}
+          </p>
+
+          {project.description?.length > 120 && (
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="mt-2 text-sm font-medium text-blue-400 hover:text-blue-300"
+            >
+              {expanded ? "See Less" : "See More"}
+            </button>
+          )}
+        </div>
 
         <div className="mt-6 flex flex-wrap gap-2">
           {project.techStack?.map((tech) => (
